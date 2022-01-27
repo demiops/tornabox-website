@@ -1,0 +1,34 @@
+<div class="container px-5 my-5">
+    <form id="contactForm" data-sb-form-api-token="5a00e91f-6611-4420-8e07-033d0eabeb58">
+        <div class="form-floating mb-3">
+            <input class="form-control" id="nombreCompleto" type="text" placeholder="Nombre Completo" data-sb-validations="required" />
+            <label for="nombreCompleto">Nombre Completo</label>
+            <div class="invalid-feedback" data-sb-feedback="nombreCompleto:required">Nombre Completo is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="correoElectronico" type="email" placeholder="Correo Electrónico" data-sb-validations="required,email" />
+            <label for="correoElectronico">Correo Electrónico</label>
+            <div class="invalid-feedback" data-sb-feedback="correoElectronico:required">Correo Electrónico is required.</div>
+            <div class="invalid-feedback" data-sb-feedback="correoElectronico:email">Correo Electrónico Email is not valid.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="usuario" type="text" placeholder="Usuario" data-sb-validations="required" />
+            <label for="usuario">Usuario</label>
+            <div class="invalid-feedback" data-sb-feedback="usuario:required">Usuario is required.</div>
+        </div>
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                <p>To activate this form, sign up at</p>
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
