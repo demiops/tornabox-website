@@ -38,51 +38,45 @@
         <header class="masthead">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Tú lugar favorito para crear experiencias 360</h1>
-                        <hr class="divider" />
-                    </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Tornabox te permite grabar tus experiencias 360 con cualquier tipo de celular en cualquier evento.</p>
-                        <a class="btn btn-primary btn-xl" href="#about">Lee sobre nosotors</a>
+                        <div class="container px-5 my-5">
+                            <form id="contactForm" data-sb-form-api-token="5a00e91f-6611-4420-8e07-033d0eabeb58">
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="nombreCompleto" type="text" placeholder="Nombre Completo" data-sb-validations="required" />
+                                    <label for="nombreCompleto">Nombre Completo</label>
+                                    <div class="invalid-feedback" data-sb-feedback="nombreCompleto:required">Nombre Completo es requerido.</div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="correoElectronico" type="email" placeholder="Correo Electrónico" data-sb-validations="required,email" />
+                                    <label for="correoElectronico">Correo Electrónico</label>
+                                    <div class="invalid-feedback" data-sb-feedback="correoElectronico:required">Correo Electrónico es requerido.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="correoElectronico:email">Correo Electrónico no es valido.</div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="usuario" type="text" placeholder="Usuario" data-sb-validations="required" />
+                                    <label for="usuario">Usuario</label>
+                                    <div class="invalid-feedback" data-sb-feedback="usuario:required">Usuario es requerido.</div>
+                                </div>
+                                <div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">Registro Exitoso!</div>
+                                        <p>En un momento recibiras un correo electrónico con tu contraseña</p>
+                                    </div>
+                                </div>
+                                <div class="d-none" id="submitErrorMessage">
+                                    <div class="text-center text-danger mb-3">Error registrandote!</div>
+                                </div>
+                                <div class="d-grid">
+                                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
 
-<div class="container px-5 my-5">
-    <form id="contactForm" data-sb-form-api-token="5a00e91f-6611-4420-8e07-033d0eabeb58">
-        <div class="form-floating mb-3">
-            <input class="form-control" id="nombreCompleto" type="text" placeholder="Nombre Completo" data-sb-validations="required" />
-            <label for="nombreCompleto">Nombre Completo</label>
-            <div class="invalid-feedback" data-sb-feedback="nombreCompleto:required">Nombre Completo es requerido.</div>
-        </div>
-        <div class="form-floating mb-3">
-            <input class="form-control" id="correoElectronico" type="email" placeholder="Correo Electrónico" data-sb-validations="required,email" />
-            <label for="correoElectronico">Correo Electrónico</label>
-            <div class="invalid-feedback" data-sb-feedback="correoElectronico:required">Correo Electrónico es requerido.</div>
-            <div class="invalid-feedback" data-sb-feedback="correoElectronico:email">Correo Electrónico no es valido.</div>
-        </div>
-        <div class="form-floating mb-3">
-            <input class="form-control" id="usuario" type="text" placeholder="Usuario" data-sb-validations="required" />
-            <label for="usuario">Usuario</label>
-            <div class="invalid-feedback" data-sb-feedback="usuario:required">Usuario es requerido.</div>
-        </div>
-        <div class="d-none" id="submitSuccessMessage">
-            <div class="text-center mb-3">
-                <div class="fw-bolder">Registro Exitoso!</div>
-                <p>En un momento recibiras un correo electrónico con tu contraseña</p>
-            </div>
-        </div>
-        <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">Error registrandote!</div>
-        </div>
-        <div class="d-grid">
-            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
-        </div>
-    </form>
-</div>
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
 
 <!-- Footer-->
 <footer class="bg-light py-5">
