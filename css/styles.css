@@ -10580,7 +10580,6 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 1400px) {
-  #background-video { display: none;}
   .float-xxl-start {
     float: left !important;
   }
@@ -11430,7 +11429,6 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 @media (min-width: 1200px) {
-  #background-video { display: none;}
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
