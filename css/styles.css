@@ -11431,6 +11431,17 @@ section.fadeground {
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
+
+@media (max-width: 750px) {
+  #background-video { display: none;}
+  header.masthead {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
 @media (min-width: 992px) {
   
   header.masthead {
