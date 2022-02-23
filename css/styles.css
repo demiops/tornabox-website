@@ -11435,9 +11435,7 @@ header.masthead h1, header.masthead .h1 {
 
 @media (max-width: 750px) {
   #background-video { display: none;}
-  img.logoimage {
-    content: url("assets/img/tornaboxwhite.png");
-  }
+  
   header.masthead {
     background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
     background-position: center;
